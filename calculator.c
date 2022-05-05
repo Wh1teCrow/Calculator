@@ -168,8 +168,8 @@ while (temp == 1){
             double s;
             int j;
             int d;
-            ui = (int*)malloc(size * sizeof(int));
-            vi = (int*)malloc(size * sizeof(int));
+            ui = (int*)malloc(size * sizeof(int));                   //<------- выделение паямяти для координат первого вектора
+            vi = (int*)malloc(size * sizeof(int));                    //<----- выделение паямяти для координат второго вектора
             printf("%s", "Введите размерность вектора ");
             scanf("%i", &size);
             
@@ -190,7 +190,7 @@ while (temp == 1){
                 resi = 0;
                 printf("При сложении вектора А и вектора В получается вектор с координатами (");
                 for (j=0;j<size;j++){
-                    resi = ui[j]+vi[j];
+                    resi = ui[j]+vi[j];                                        // реализация суммы векторов
                     printf(" %f ", resi);
                 }
                 printf(")");
@@ -198,13 +198,13 @@ while (temp == 1){
                 resi = 0;
                 printf("При вычитании вектора А и вектора В получается вектор с координатами (", resi);
                 for (i=0;i<size;i++){
-                    resi = ui[i]-vi[i];
+                    resi = ui[i]-vi[i];                                      // реализация разности векторов
                     printf(" %f ", resi);
                 }
                 printf(")");
             }else if(op_v == 3){
                 
-                resi = 0;
+                resi = 0;                                                    // реализация скалярного произведения
                 for (j=0;j<size;j++){
                     resi+=ui[j]*vi[j];
                 }
