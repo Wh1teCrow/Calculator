@@ -120,10 +120,10 @@ while (temp == 1){
             
             printf("Сумма %i и %i = %i \n",a,b,a+b);
         }else if(o == 2){
-                printf("Разность %i Рё %i = %i \n",a,b,a-b);
+                printf("Разность %i и %i = %i \n",a,b,a-b);
                 
         }else if(o == 3){
-                printf("Произведение %i Рё %i= %i \n",a,b,a*b);
+                printf("Произведение %i и %i= %i \n",a,b,a*b);
                 
         }else if(o == 4){
             if (b == 0){
