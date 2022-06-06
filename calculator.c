@@ -218,7 +218,7 @@ while (temp == 1){
                 fprintf(file_o, ") =");
                 fprintf(file_o, "("); 
                  for(j=0;j<size;j++){   
-                    fprintf(file_o, "%f ", (ui[j])- (vi[j]));
+                    fprintf(file_o, "%f ", (ui[j])+ (vi[j]));
                      
                     
                         
